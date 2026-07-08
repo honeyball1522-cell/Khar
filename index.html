@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<title>خرج روزانه</title>
+<meta name="theme-color" content="#17140f">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">استودیو ترمه</div>
+    <h1>خرج روزانه</h1>
+  </header>
+
+  <div class="summary">
+    <div class="sum-card">
+      <div class="sum-label">مجموع این هفته</div>
+      <div class="sum-value" id="weekTotal">۰</div>
+      <div class="sum-sub" id="weekRangeSub"></div>
+    </div>
+    <div class="sum-card">
+      <div class="sum-label">مجموع این ماه</div>
+      <div class="sum-value" id="monthTotal">۰</div>
+      <div class="sum-sub" id="monthNameSub"></div>
+    </div>
+  </div>
+
+  <div class="week-nav">
+    <button class="nav-btn" id="prevWeek">›</button>
+    <div style="display:flex; flex-direction:column; align-items:center; gap:6px;">
+      <div class="week-label" id="weekLabel">—</div>
+      <button class="today-btn" id="todayBtn">برو به امروز</button>
+    </div>
+    <button class="nav-btn" id="nextWeek">‹</button>
+  </div>
+
+  <div class="days" id="daysContainer"></div>
+
+  <footer>داده‌ها فقط روی همین مرورگر ذخیره می‌شوند</footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
